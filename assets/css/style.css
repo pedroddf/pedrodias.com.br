@@ -1,0 +1,176 @@
+@import url('font-awesome.min.css');
+@import url('grid.min.css');
+/**
+*
+* CSS para o projeto: "Pedro Dias"
+*
+* @version      1.0
+* @author       Pedro Dias, design.pedrodias@gmail.com (PSD, HTML5, CSS3)
+* @copyright    Pedro Dias, 2019
+* @date         06/12/2018
+* @creator      Sublime Text 2
+*
+* @fontdef      Lato Black
+* @fontdef      Lato Bold
+* @fontdef      Lato Regular
+* @fontdef      Gentium Basic Bold
+* @fontdef      Gentium Basic Bold Italic
+* @fontdef      Gentium Basic Regular
+*
+* @colourdef    #ffd100
+* @colourdef    #000000
+* @colourdef    #ffffff
+* @colourdef    #1f1f1f 
+* @colourdef	#c73045
+*
+*
+*
+* =Reset
+*
+----------------------------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+/*
+*
+* =Default
+*
+----------------------------------------------------------------------------------------------------*/
+html {
+	font-size: 62.5%;
+}
+body {
+	font: 2.4rem/2 'Gentium Basic', serif;
+	line-height: 1.8;
+	color: #5b5b5b;
+	text-align: center;
+}
+h1, h2, h3 {
+	font-family: Lato, Arial, sans-serif;
+	line-height: 1;
+}
+p {
+	margin-bottom: 15px;
+}
+	p:last-child {
+		margin-bottom: 0;
+	}
+a {
+	text-decoration: none;
+}
+::selection {
+	background-color: rgba(255, 255, 255, .5);
+}
+/*
+*
+* =Header
+*
+----------------------------------------------------------------------------------------------------*/
+.grid-container {
+	position: absolute;
+	max-width: 1024px;
+	width: 100%;
+}
+#brand {
+	max-width: 300px;
+	height: auto;
+	padding: 50px 0;
+	display: block;
+	margin: 0 auto;
+}
+#header {
+	padding: 100px 0 100px;
+	text-align: center;
+	position: relative;
+}
+h1 {
+	font-size: 3.5rem;
+	font-weight: 900;
+	color: #001219;
+	margin-bottom: 10px;
+}
+h2 {
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+p {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #b1b1b1;
+}
+hr {
+	height: 1px;
+	background: #b1b1b1;
+	border: none;
+}
+.social {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+	.grid-container {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.grid-container {
+		position: initial;
+	}
+}
