@@ -135,9 +135,11 @@ a {
 	font-weight: 600;
 	letter-spacing: 2px;
 	color: #fff;
+	transition:  all .2s linear;
 }
 .full-container a:hover {
 	color: #b1b1b1;
+	transition:  all .2s linear;
 }
 #brand {
 	max-width: 250px;
@@ -174,4 +176,9 @@ hr {
 .social {
 	margin-top: 10px;
 	display: inline-block;
+	transition:  all .2s linear;
+}
+.social:hover {
+	opacity: .5;
+	transition:  all .2s linear;
 }
