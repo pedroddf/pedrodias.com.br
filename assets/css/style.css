@@ -97,6 +97,7 @@ body {
 	line-height: 1.8;
 	color: #5b5b5b;
 	text-align: center;
+	padding: 75px 0;
 }
 h1, h2, h3 {
 	font-family: Lato, Arial, sans-serif;
@@ -121,15 +122,22 @@ a {
 ----------------------------------------------------------------------------------------------------*/
 .full-container {
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	background-color: #000000;
+	z-index: 100;
 }
-.grid-container {
-	position: absolute;
-	max-width: 1024px;
-	width: 100%;
+.full-container a {
+	font-family: Lato, Arial, sans-serif;
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.full-container a:hover {
+	color: #b1b1b1;
 }
 #brand {
 	max-width: 250px;
@@ -166,18 +174,4 @@ hr {
 .social {
 	margin-top: 10px;
 	display: inline-block;
-}
-
-@media screen and (min-width: 768px) {
-	.grid-container {
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-}
-
-@media screen and (max-width: 767px) {
-	.grid-container {
-		position: initial;
-	}
 }
