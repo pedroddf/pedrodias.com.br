@@ -119,15 +119,22 @@ a {
 * =Header
 *
 ----------------------------------------------------------------------------------------------------*/
+.full-container {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
 .grid-container {
 	position: absolute;
 	max-width: 1024px;
 	width: 100%;
 }
 #brand {
-	max-width: 300px;
+	max-width: 250px;
 	height: auto;
-	padding: 50px 0;
+	padding: 35px 0;
 	display: block;
 	margin: 0 auto;
 }
