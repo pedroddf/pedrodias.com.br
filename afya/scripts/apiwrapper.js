@@ -465,7 +465,7 @@ function getAPI()
    }
    if (theAPI == null)
    {
-      alert("Unable to find an API adapter");
+      console.log("Unable to find an API adapter");
    }
    return theAPI
 }
