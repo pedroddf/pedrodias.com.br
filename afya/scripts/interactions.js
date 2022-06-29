@@ -147,27 +147,12 @@ $(window).bind('load', function () {
             margin: 10,
             loop: false,
             nav: true,
-            items: 4,
+            items: 1,
             dots: false,
-            autoHeight: false,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            responsiveClass:true,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true,
-                    dots: true
-                },
-                480:{
-                    items:2,
-                    nav:true,
-                    dots: false
-                },
-                768:{
-                    items:4,
-                    nav:true
-                }
-            }
+            autoHeight: true,
+            // autoHeightClass: 'owl-height',
+            responsiveClass: false
         });
 
         /**

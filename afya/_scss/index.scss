@@ -739,13 +739,13 @@ header {
 
 .owl-carousel {
     .item {
-        margin-right: 10px;
+        // margin-right: 10px;
         // background-color: map-get($colors, 1);
         border-radius: 5px;
 
-        @media screen and (min-width: 768px) {
-            min-height: 475px;
-        }
+        // @media screen and (min-width: 768px) {
+        //     min-height: 375px;
+        // }
 
         .no-padding {
             padding-left: 0 !important;
@@ -789,6 +789,16 @@ header {
 
 .owl-carousel {
 
+    // &.owl-screen-17 {
+    //     max-height: 375px;
+    // }
+
+    // &.owl-screen-23 {
+    //     max-height: 305px;
+    // }
+
+    // outline: 1px solid;
+
     i[class*="fa fa-angle-"] {
         padding-top: 14px;
         width: 25px;
@@ -797,7 +807,7 @@ header {
         border-radius: 50%;
         position: absolute;
         color: map-get($colors, 1);
-        top: -25px;
+        top: 0;
 
         @media screen and (max-width: 768px) {
             display: none;
@@ -812,16 +822,16 @@ header {
     }
 
     i[class="fa fa-angle-left"] {
-        left: -23px;
+        left: -35px;
     }
 
     i[class="fa fa-angle-right"] {
-        right: -23px;
+        right: -35px;
     }
 
-    .owl-item {
-        max-height: 450px;
-    }
+    // .owl-item {
+    //     max-height: 450px;
+    // }
     
     .item {
         width: 100%;
@@ -830,8 +840,11 @@ header {
         height: 100%;
 
         .box {
-            min-height: 410px;
+            // min-height: 410px; ALTERADO
             width: 100%;
+            padding: 30px;
+            text-align: left;
+            margin-bottom: 0 !important;
         }
 
         img {
@@ -852,6 +865,7 @@ header {
     position: absolute;
     @extend .u-align-ctr-y;
     width: 100%;
+    height: 45px;
 }
 
 .owl-dots {
