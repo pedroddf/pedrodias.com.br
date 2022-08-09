@@ -1,0 +1,42 @@
+@import 'variables';
+
+// // ==========================================================================
+// //
+// // General classes [DON'T CHANGE!]
+// //
+// // ==========================================================================
+// Text
+// Display
+// Padding / Margin
+// // ==========================================================================
+
+// ==========================================================================
+// Text
+// ==========================================================================
+.pd-txt-lft { text-align: left; }
+.pd-txt-ctr { text-align: center; }
+.pd-txt-rgt { text-align: right; }
+
+.pd-txt-up { text-transform: uppercase; }
+.pd-txt-low { text-transform: lowercase; }
+.pd-txt-cap { text-transform: capitalize; }
+
+// ==========================================================================
+// Display
+// ==========================================================================
+.pd-ds-none { display: none; }
+.pd-ds-block { display: block; }
+.pd-ds-iblock { display: inline-block; }
+
+// ==========================================================================
+// Padding / Margin
+// ==========================================================================
+.pd-padding-no { padding: 0 !important; }
+.pd-padding-half { padding: $layout-module-size / 2; }
+.pd-padding-default { padding: $layout-module-size; }
+.pd-padding-double { padding: $layout-module-size * 2; }
+
+.pd-margin-no { margin: 0 !important; }
+.pd-margin-half { margin: $layout-module-size / 2; }
+.pd-margin-default { margin: $layout-module-size; }
+.pd-margin-double { margin: $layout-module-size * 2; }
