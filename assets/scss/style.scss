@@ -39,6 +39,7 @@ html, body {
 
     h1 {
         font-size: 2.6rem;
+        line-height: 1.5;
 
         @media screen and (max-width: 575px) {
             font-size: 2.2rem;
