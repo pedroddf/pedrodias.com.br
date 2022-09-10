@@ -192,6 +192,10 @@ body {
         padding-top: 200px;
     }
 
+    @media screen and (max-width: 575px) {
+        margin-top: 100px;
+    }
+
     img {
         margin-top: -235px;
         position: relative;
@@ -288,6 +292,28 @@ body {
             margin: 0 auto;
             display: block;
             margin-bottom: 20px;
+        }
+    }
+}
+
+// ==========================================================================
+// Services
+// ==========================================================================
+#pd-services {
+    @extend .pd-wrap;
+    padding-top: 0;
+    
+    img {
+        max-width: 145px;
+        @media screen and (max-width: 575px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .pd-service {
+        margin-bottom: 100px;
+        @media screen and (max-width: 575px) {
+            margin-bottom: 50px;
         }
     }
 }
