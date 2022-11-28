@@ -1,0 +1,91 @@
+// ==========================================================================
+// Fonts
+// ==========================================================================
+
+$fs: 14, 18, 20, 25, 30, 40, 60;
+@each $size in $fs {
+    .u-fs-#{$size} { font-size: ($size)/10 + rem; }
+}
+
+@media screen and (max-width: 768px) {
+    .u-fs-25 {
+        font-size: 2rem;
+    }
+}
+
+$fs-reset: 62.5%;
+$fs-default: 1.5rem;
+$lh-default: 1.5;
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+$color-1: #fff;
+$color-2: #000;
+$color-3: #D31C5B;
+$color-4: #EDEDED;
+$color-5: #F5F5F5;
+$color-6: #D2D2D2;
+$color-7: #231F20;
+$color-8: #4E4E50;
+$color-9: #E5E5E5;
+$color-10: #EBFFF4;
+$color-11: #01B753;
+$color-12: #818B85;
+$color-13: #f7f7f7;
+
+$colors: (
+	1: $color-1,
+	2: $color-2,
+	3: $color-3,
+	4: $color-4,
+	5: $color-5,
+	6: $color-6,
+	7: $color-7,
+	8: $color-8,
+    9: $color-9,
+    10: $color-10,
+    11: $color-11,
+    12: $color-12,
+    13: $color-13
+);
+
+@each $count, $color in $colors {
+    .u-bgc-#{$count} { background-color: $color; } 
+    .u-color-#{$count} { color: $color; }
+}
+
+// ==========================================================================
+// Shadow
+// ==========================================================================
+@mixin box-shadow($h: 0, $v: 3px, $blur: 6px, $color: rgba(map-get($colors, 4), .2)) {
+    box-shadow: $h $v $blur $color;
+}
+
+// ==========================================================================
+// Padding / Margin
+// ==========================================================================
+$layout-module-size: 20px;
+$directions: top, right, bottom, left;
+
+$space-element: $layout-module-size * 2;
+
+.u-space-bottom-default {
+	margin-bottom: $space-element !important;
+}
+
+@each $direction in $directions {
+    .u-padding-no-#{$direction} { padding-#{$direction}: 0 !important; }
+    .u-padding-half-#{$direction} { padding-#{$direction}: $layout-module-size / 2; }
+    .u-padding-default-#{$direction} { padding-#{$direction}: $layout-module-size; }
+    .u-padding-double-#{$direction} { padding-#{$direction}: $layout-module-size * 2; }
+    .u-margin-no-#{$direction} { margin-#{$direction}: 0 !important; }
+    .u-margin-half-#{$direction} { margin-#{$direction}: $layout-module-size / 2; }
+    .u-margin-default-#{$direction} { margin-#{$direction}: $layout-module-size; }
+    .u-margin-double-#{$direction} { margin-#{$direction}: $layout-module-size * 2; }
+}
+
+// ==========================================================================
+// Border-radius
+// ==========================================================================
+$bor-rad: 5px;
