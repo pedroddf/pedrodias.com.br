@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" prefix="rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<meta name="generator" content="Adobe InDesign 11.4.1" />
+		<meta name="cover" content="x1.png" />
+		<meta property="ibooks:specified-fonts">true</meta>
+		<dc:title>tela</dc:title>
+		<dc:date>2016-10-07T18:50:45Z</dc:date>
+		<dc:language>en-US</dc:language>
+		<meta property="dcterms:modified">2016-10-07T18:50:45Z</meta>
+		<dc:identifier id="bookid">urn:uuid:ff098104-7fca-4a24-b003-b016f4d46d2f</dc:identifier>
+		<!--fixed-layout options-->
+		<meta property="rendition:layout">pre-paginated</meta>
+		<meta property="rendition:orientation">landscape</meta>
+		<meta property="rendition:spread">none</meta>
+	</metadata>
+	<manifest>
+		<item id="tela-1" href="tela-1.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+		<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav" />
+		<item id="idGeneratedStyles.css" href="css/idGeneratedStyles.css" media-type="text/css" />
+		<item id="Roboto-Light.ttf" href="font/Roboto-Light.ttf" media-type="application/x-font-ttf" />
+		<item id="Roboto-Regular.ttf" href="font/Roboto-Regular.ttf" media-type="application/x-font-ttf" />
+		<item id="x1.png" href="image/1.png" media-type="image/png" properties="cover-image" />
+		<item id="x10.png" href="image/10.png" media-type="image/png" />
+		<item id="x12.png" href="image/12.png" media-type="image/png" />
+		<item id="x13.png" href="image/13.png" media-type="image/png" />
+		<item id="x14.png" href="image/14.png" media-type="image/png" />
+		<item id="x15.png" href="image/15.png" media-type="image/png" />
+		<item id="x16.png" href="image/16.png" media-type="image/png" />
+		<item id="x2.png" href="image/2.png" media-type="image/png" />
+		<item id="x4.png" href="image/4.png" media-type="image/png" />
+		<item id="x5.png" href="image/5.png" media-type="image/png" />
+		<item id="x7.png" href="image/7.png" media-type="image/png" />
+		<item id="x8.png" href="image/8.png" media-type="image/png" />
+		<item id="alpha1.png" href="image/alpha1.png" media-type="image/png" />
+		<item id="alpha2.png" href="image/alpha2.png" media-type="image/png" />
+		<item id="alpha3.png" href="image/alpha3.png" media-type="image/png" />
+		<item id="alpha4.png" href="image/alpha4.png" media-type="image/png" />
+		<item id="alpha5.png" href="image/alpha5.png" media-type="image/png" />
+		<item id="alpha6.png" href="image/alpha6.png" media-type="image/png" />
+		<item id="carro_separado.png" href="image/carro_separado.png" media-type="image/png" />
+		<item id="confirmar.png" href="image/confirmar.png" media-type="image/png" />
+		<item id="fundo.png" href="image/fundo.png" media-type="image/png" />
+		<item id="kit1a.png" href="image/kit1a.png" media-type="image/png" />
+		<item id="kit1b.png" href="image/kit1b.png" media-type="image/png" />
+		<item id="kit2a.png" href="image/kit2a.png" media-type="image/png" />
+		<item id="kit2b.png" href="image/kit2b.png" media-type="image/png" />
+		<item id="kit3a.png" href="image/kit3a.png" media-type="image/png" />
+		<item id="kit3b.png" href="image/kit3b.png" media-type="image/png" />
+		<item id="epub3.0.js" href="script/epub3.0.js" media-type="text/javascript" />
+		<item id="idGeneratedScript.js" href="script/idGeneratedScript.js" media-type="text/javascript" />
+	</manifest>
+	<spine>
+		<itemref idref="tela-1" />
+	</spine>
+</package>

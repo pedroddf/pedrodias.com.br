@@ -267,21 +267,28 @@ h3 {
 					margin-left: auto;
 					margin-right: auto;
 				}
-			.bt-action:hover {
+			.bt-action:hover,
+			.bt-action.bt-silver.active,
+			.bt-action.bt-gold.active {
 				color: #000;
 				background-color: #ffd100;
 			}
 			.bt-silver:hover:before, 
-			.bt-gold:hover:before {
+			.bt-silver.active:before,
+			.bt-gold:hover:before,
+			.bt-gold.active:before {
 				background-position: 0 -40px;
 			}
-			.bt-action:hover:after {
+			.bt-action:hover:after,
+			.bt-action.active:after {
 				background-color: #000;
 			}
-			.bt-all:hover {
+			.bt-all:hover,
+			.bt-all.active {
 				color: #ffd100;
 			}
-			.bt-all:hover:after {
+			.bt-all:hover:after,
+			.bt-all.active:after {
 				background-color: #ffd100; 
 			}
 			.bt-action, 
@@ -314,6 +321,9 @@ h3 {
 	    height: 202px;
 	    margin-bottom: 4px;
 	}
+		#interaction > .filter-hidden {
+			display: none;
+		}
 		#interaction > li > a {
 		    display: block;
 		    position: relative;
@@ -321,8 +331,8 @@ h3 {
 		    height: 100%;
 		    max-height: 202px;
 		    padding: 25px;
-			*border-top: 1px solid rgba(255, 255, 255, .2);
-		    border-right: 1px solid rgba(255, 255, 255, .2);
+			/*border-top: 1px solid rgba(255, 255, 255, .2);
+		    border-right: 1px solid rgba(255, 255, 255, .2);*/
 		    border-bottom: 1px solid #ffd100;
 		    background-color: rgba(0, 0, 0, .35);
 		    text-transform: uppercase;
@@ -331,10 +341,7 @@ h3 {
 		    color: #fff;
 		    overflow: hidden;
 		}	
-		#interaction > li:nth-child(5n+0) > a {
-			border-right: none;
-		}
-			#interaction > li > a:before {
+		#interaction > li > a:before {
 			    content: '';
 			    border-color: transparent #ffd100 #ffd100 transparent;
 			    border-width: 20px;
@@ -383,40 +390,54 @@ h3 {
 			position: relative;
 			top: 22px;
 		}
-		#interaction > li > a > .ico-plan {
-			display: block;
+		#interaction > li > a .icons-plan {
 			position: absolute;
+			text-align: center;
+			padding: 25px 20px 20px;
+			left: 0;
+			right: 0;
+			bottom: -90px;
+		}
+		#interaction > li > a .ico-plan {
+			display: inline-block;
+			/*position: absolute;
 			top: 250px;
 			left: 0;
 			right: 0;
 			margin-left: auto;
-			margin-right: auto;
+			margin-right: auto;*/
 			width: 40px;
 			height: 40px;
 		}
-			#interaction > li > a > .ico-silver, 
-			#interaction > li > a > .ico-gold {
+			#interaction > li > a .ico-silver, 
+			#interaction > li > a .ico-gold {
 				background-position: 0 -40px;
 			}
-			#interaction > li > a > .ico-silver {
+			#interaction > li > a .ico-silver {
 				background-image: url(../img/ico_silver.svg);
+				margin-right: 2px;
 			}
-			#interaction > li > a > .ico-gold {
+			#interaction > li > a .ico-gold {
 				background-image: url(../img/ico_gold.svg);
+				margin-left: 2px;
+			}
+			#interaction > li.silver > a .ico-gold {
+				display: none;
 			}
 		#interaction > li.expanded {
 			height: 905px;
 		}			
 			#interaction > li > .iframe {
 				display: none;
+				z-index: 1000;
 				position: absolute;
 				top: auto;
 				left: 0;
 				width: 100%;
 				height: 700px;
-				background-color: #fff;
+				background-color: rgba(255, 255, 255, .2);
 				padding: 50px 0;
-				margin-top: 3px;			
+				margin-top: 3px;		
 			}
 			#interaction li.expanded > .iframe {
 				display: block; 
@@ -450,8 +471,12 @@ h3 {
 			#interaction > li > a.active > p {
 				top: 250px;
 			}
-			#interaction > li > a:hover > .ico-plan, 
-			#interaction > li > a.active > .ico-plan {
+			#interaction > li > a:hover .icons-plan,
+			#interaction > li > a.active .icons-plan {
+				bottom: 0;
+			}
+			#interaction > li > a:hover .ico-plan, 
+			#interaction > li > a.active .ico-plan {
 				top: 136px;
 			}
 			#interaction > li,
@@ -461,7 +486,8 @@ h3 {
 			#interaction > li > a > .hr-primary,
 			#interaction > li > a > .hr-effect,
 			#interaction > li > a > p,
-			#interaction > li > a > .ico-plan {
+			#interaction > li > a .icons-plan,
+			#interaction > li > a .ico-plan {
 				-webkit-transition: all .3s ease-in-out;
 				transition: all .3s ease-in-out;
 			}
@@ -472,7 +498,8 @@ h3 {
 			#interaction > li > a:hover > .hr-primary,
 			#interaction > li > a:hover > .hr-effect,
 			#interaction > li > a:hover > p,
-			#interaction > li > a:hover > .ico-plan {
+			#interaction > li > a:hover .icons-plan,
+			#interaction > li > a:hover .ico-plan {
 				-webkit-transition: all .3s ease-in-out;
 				transition: all .3s ease-in-out;
 			}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" prefix="rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<meta name="generator" content="Adobe InDesign 11.4.1" />
+		<meta name="cover" content="x1.png" />
+		<meta property="ibooks:specified-fonts">true</meta>
+		<dc:title>tela</dc:title>
+		<dc:date>2016-10-06T15:11:02Z</dc:date>
+		<dc:language>en-US</dc:language>
+		<meta property="dcterms:modified">2016-10-06T15:11:02Z</meta>
+		<dc:identifier id="bookid">urn:uuid:ff098104-7fca-4a24-b003-b016f4d46d2f</dc:identifier>
+		<!--fixed-layout options-->
+		<meta property="rendition:layout">pre-paginated</meta>
+		<meta property="rendition:orientation">landscape</meta>
+		<meta property="rendition:spread">none</meta>
+	</metadata>
+	<manifest>
+		<item id="tela-1" href="tela-1.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+		<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav" />
+		<item id="epub.css" href="css/epub.css" media-type="text/css" />
+		<item id="idGeneratedStyles.css" href="css/idGeneratedStyles.css" media-type="text/css" />
+		<item id="Roboto-Bold.ttf" href="font/Roboto-Bold.ttf" media-type="application/x-font-ttf" />
+		<item id="x1.png" href="image/1.png" media-type="image/png" properties="cover-image" />
+		<item id="x14.png" href="image/14.png" media-type="image/png" />
+		<item id="x15.png" href="image/15.png" media-type="image/png" />
+		<item id="x17.png" href="image/17.png" media-type="image/png" />
+		<item id="x19.png" href="image/19.png" media-type="image/png" />
+		<item id="x2.png" href="image/2.png" media-type="image/png" />
+		<item id="x20.png" href="image/20.png" media-type="image/png" />
+		<item id="x22.png" href="image/22.png" media-type="image/png" />
+		<item id="x3.png" href="image/3.png" media-type="image/png" />
+		<item id="x32.png" href="image/32.png" media-type="image/png" />
+		<item id="x33.png" href="image/33.png" media-type="image/png" />
+		<item id="x36.png" href="image/36.png" media-type="image/png" />
+		<item id="x4.png" href="image/4.png" media-type="image/png" />
+		<item id="x44.png" href="image/44.png" media-type="image/png" />
+		<item id="x48.png" href="image/48.png" media-type="image/png" />
+		<item id="x5.png" href="image/5.png" media-type="image/png" />
+		<item id="x56.png" href="image/56.png" media-type="image/png" />
+		<item id="x57.png" href="image/57.png" media-type="image/png" />
+		<item id="x58.png" href="image/58.png" media-type="image/png" />
+		<item id="x59.png" href="image/59.png" media-type="image/png" />
+		<item id="x6.png" href="image/6.png" media-type="image/png" />
+		<item id="x60.png" href="image/60.png" media-type="image/png" />
+		<item id="x61.png" href="image/61.png" media-type="image/png" />
+		<item id="x62.png" href="image/62.png" media-type="image/png" />
+		<item id="x63.png" href="image/63.png" media-type="image/png" />
+		<item id="x64.png" href="image/64.png" media-type="image/png" />
+		<item id="x65.png" href="image/65.png" media-type="image/png" />
+		<item id="x66.png" href="image/66.png" media-type="image/png" />
+		<item id="x67.png" href="image/67.png" media-type="image/png" />
+		<item id="x68.png" href="image/68.png" media-type="image/png" />
+		<item id="x69.png" href="image/69.png" media-type="image/png" />
+		<item id="x7.png" href="image/7.png" media-type="image/png" />
+		<item id="x70.png" href="image/70.png" media-type="image/png" />
+		<item id="x71.png" href="image/71.png" media-type="image/png" />
+		<item id="x72.png" href="image/72.png" media-type="image/png" />
+		<item id="x73.png" href="image/73.png" media-type="image/png" />
+		<item id="x74.png" href="image/74.png" media-type="image/png" />
+		<item id="x75.png" href="image/75.png" media-type="image/png" />
+		<item id="x76.png" href="image/76.png" media-type="image/png" />
+		<item id="x77.png" href="image/77.png" media-type="image/png" />
+		<item id="x78.png" href="image/78.png" media-type="image/png" />
+		<item id="x79.png" href="image/79.png" media-type="image/png" />
+		<item id="x8.png" href="image/8.png" media-type="image/png" />
+		<item id="x80.png" href="image/80.png" media-type="image/png" />
+		<item id="x81.png" href="image/81.png" media-type="image/png" />
+		<item id="x82.png" href="image/82.png" media-type="image/png" />
+		<item id="x83.png" href="image/83.png" media-type="image/png" />
+		<item id="x84.png" href="image/84.png" media-type="image/png" />
+		<item id="x85.png" href="image/85.png" media-type="image/png" />
+		<item id="x9.png" href="image/9.png" media-type="image/png" />
+		<item id="x90.png" href="image/90.png" media-type="image/png" />
+		<item id="x91.png" href="image/91.png" media-type="image/png" />
+		<item id="x93.png" href="image/93.png" media-type="image/png" />
+		<item id="shutterstock_311085290.jpg" href="image/shutterstock_311085290.jpg" media-type="image/jpeg" />
+		<item id="shutterstock_84518011.jpg" href="image/shutterstock_84518011.jpg" media-type="image/jpeg" />
+		<item id="idGeneratedScript.js" href="script/idGeneratedScript.js" media-type="text/javascript" />
+	</manifest>
+	<spine>
+		<itemref idref="tela-1" />
+	</spine>
+</package>
