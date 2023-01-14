@@ -1,0 +1,438 @@
+@font-face {
+	font-family:"Minion Pro";
+	font-style:normal;
+	font-weight:normal;
+	src :  url("../fonte/MinionPro-Regular.woff"), url("../fonte/MinionPro-Regular.svg");
+}
+@font-face {
+	font-family:"Odebrecht Sans";
+	font-style:normal;
+	font-weight:normal;
+	src :  url('../fonte/Odebrecht-Sans.woff2') format('woff2'),
+    url('../fonte/Odebrecht-Sans.woff') format('woff'),
+    url('../fonte/Odebrecht-Sans.ttf') format('truetype'),
+    url("../fonte/Odebrecht-Sans.svg") format('svg');
+}
+@font-face {
+	font-family:"Odebrecht Sans Bold";
+	font-style:normal;
+	font-weight:600;
+	src : url('../fonte/OpenSans-Bold.woff2') format('woff2'),
+    url('../fonte/OpenSans-Bold.woff') format('woff'),
+    url('../fonte/OpenSans-Bold.ttf') format('truetype'),
+    url('../fonte/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+}
+@font-face {
+	font-family:"Odebrecht Sans";
+	font-style:italic;
+	font-weight:normal;
+	src :  url("../fonte/Odebrecht-SansItalic.woff"), url("../fonte/Odebrecht-SansItalic.svg");
+}
+@font-face {
+	font-family:"Odebrecht Sans";
+	font-style:oblique;
+	font-weight:normal;
+	src :  url("../fonte/Odebrecht-SansItalic.woff"), url("../fonte/Odebrecht-SansItalic.svg");
+}
+@font-face {
+	font-family:"Open Sans";
+	font-style:normal;
+	font-weight:bold;
+	src :  url("../fonte/OpenSans-Bold.woff"), url("../fonte/OpenSans-Bold.svg");
+}
+
+/* [webAula] Estilos personalizados das telas */
+
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+
+body {
+	color: #333;
+	font-family: Calibri, Arial;
+	font-size: 18px;
+	height: calc(100% - 75px);
+	overflow-y: auto;
+	padding-bottom: 85px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+img {
+	max-width: 100%;
+}
+
+.box-azul,
+.box-bege,
+.box-laranja,
+.box-limao,
+.box-prata,
+.box-salmao,
+.box-transparente, 
+.box-turquesa,
+.box-verde,
+.box-vermelho {
+	border-radius: 10px;
+	margin: 10px 0;
+	padding: 15px;
+}
+
+.box-azul {
+	background: #008eab;
+	color: #fff;
+}
+
+.box-bege {
+	background: #e7ddc9;
+}
+
+.box-laranja {
+	background: #f15f37;
+	color: #fff;
+}
+
+.box-limao {
+	background: #76af5c;
+	color: #fff;
+}
+
+.box-prata {
+	background: #dadada;
+}
+
+.box-transparente {
+	border: solid 1px #fff;
+	margin: 0;
+}
+
+.box-turquesa {
+	background: #47979e;
+	color: #fff;
+}
+
+.box-verde {
+	background: #007546;
+	color: #fff;
+}
+
+.box-salmao {
+	background: #e8d0d0;
+}
+
+.box-vermelho {
+	background: #c0504d;
+	color: #fff;
+}
+
+.centraliza-x {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.tituloQuestao{
+	background-color: #a4c84d;
+	background-image: linear-gradient(to bottom, #c7de42 1px, transparent 1px), radial-gradient(#c7de42 0px, #c7de42 5px, transparent 5px);
+	background-repeat: no-repeat;
+	background-position: center right, 270px center;
+	background-size:790px 1px, 10px 10px;
+	color: #c7de42;
+	width: 100%;
+	height: 82px;
+	font-size: 45px;
+	margin-top: 40px;
+	padding-left: 45px;
+	font-weight: bold;
+	line-height: 75px;
+}
+
+.enunciado{
+	margin:20px auto;
+	width: 900px;
+	color:#FFF;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.estrutura-atividade{
+	display: inline-block;
+	width: 72px;
+	overflow: hidden;
+	margin:5px;
+}
+
+.estrutura-atividade .opcao{
+	width: 72px;
+	height: 95px;
+}
+
+.estrutura-atividade .opcao .marcador {
+	background-image: url(../telas/img/bt.png);
+	width: 20px;
+
+}
+
+.opcao.drag{
+	width: 100px;
+	-webkit-transition: all 0s linear;
+	-o-transition: all 0s linear;
+	transition: all 0s linear;
+}
+
+.opcao.ativo.drag{
+	-webkit-transition: all 0s linear;
+	-o-transition: all 0s linear;
+	transition: all 0s linear;
+}
+
+.opcao{
+	background-color: #747578;
+	border: #747578 1px solid;
+	border-radius: 10px;
+	width: 900px;
+	height: 80px;
+	margin: 20px auto;
+	overflow: hidden;
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+.opcao.ativo{
+	cursor: pointer;
+}
+
+.opcao .marcador{
+	background-color: #8c8c8b;
+	color:#c7de42;
+	display: table-cell;
+	width: 100px;
+	height: 80px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 45px;
+	text-transform: lowercase;
+	font-weight: bold;
+}
+
+.opcao.ativo:hover .marcador{
+	background-color:#c7de42;
+	color:#8c8c8b;
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+.opcao .texto{
+	color: #FFF;
+	display: table-cell;
+	width: 790px;
+	height: 80px;
+	vertical-align: middle;
+	padding: 0 10px;
+	font-size: 20px;
+	-khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.opcao.erro .marcador:before{
+	content: "";
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 25px;
+	background-image: url(../telas/img/erro.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.opcao.correto .marcador:before{
+	content: "";
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 25px;
+	background-image: url(../telas/img/certo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.areaDrop{
+	display: none;
+	background-color: #c2d889;
+	width: 1024px;
+	height: 560px;
+	position: absolute;
+	top: 40px;
+	-webkit-transform: scale(1, 0);
+	-ms-transform: scale(1, 0);
+	-o-transform: scale(1, 0);
+	transform: scale(1, 0);
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.areaDrop.ativo{
+	display: block;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.areaDrop .drop{
+	background-color: #FFF;
+	width: 800px;
+	margin: 10px auto;
+	padding: 10px 10px 10px 50px;
+	border-radius: 10px;
+	border:1px solid #6d7571;
+	-khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.areaDrop .drop.marcado{
+	pointer-events:none;
+}
+
+.areaDrop .drop.correto{
+	background-color: #0F0;
+}
+
+.areaDrop .drop.erro{
+	background-color: #F00;
+}
+
+
+#bt-finalizar{
+	text-align: center;
+	width: 120px;
+	height: 38px;
+	margin: auto;
+	margin-top: -10px;
+	background-image: url(../img/finalizar.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+}
+
+#bloqueador-atividade{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1024px;
+	height: 600px;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+#feedback-atividade{
+	width: 480px;
+	height: 227px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: #FFF;
+	font-size: 22px;
+}
+
+#feedback-atividade #feedback-titulo{
+	color: #FFF;
+	height: 65px;
+	font-size: 22px;
+	line-height: 65px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+#feedback-atividade #feedback-titulo:after{
+	position: absolute;
+	content: "";
+	width: 122px;
+	height: 102px;
+	top: 40px;
+	right: 10px;
+	background-image: url(../img/feed.png);
+}
+
+#feedback-atividade.incorreto-tentativa1 #feedback-titulo{
+	background-color: #f58530;
+}
+
+#feedback-atividade.incorreto-tentativa2 #feedback-titulo{
+	background-color: #ee3035;
+}
+
+#feedback-atividade.correto #feedback-titulo{
+	background-color: #0a9e92;
+}
+
+#feedback-atividade.incorreto-tentativa1 .titulo{
+	color: #f58530;
+	font-weight: bold;
+}
+
+#feedback-atividade.incorreto-tentativa2 .titulo{
+	color: #ee3035;
+	font-weight: bold;
+}
+
+#feedback-atividade.correto .titulo{
+	color: #0a9e92;
+	font-weight: bold;
+}
+
+#feedback-atividade .texto{
+	width: 340px;
+	font-size: 20px;
+	color:#6d6e71;
+}
+
+#feedback-atividade .texto, #feedback-atividade .titulo{
+	padding: 0 20px;
+}
+
+#feedback-atividade #refazer-atividade{
+	position: absolute;
+	top:250px;
+	left: 180px;
+	background-image: url(../img/refazer.png);
+	text-align: center;
+	width: 120px;
+	height: 38px;
+	margin: auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+}
+

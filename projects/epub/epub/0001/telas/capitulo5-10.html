@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Tela</title>
+	<link href="../css/interacao.css" rel="stylesheet">
+	<link href="../css/tela.css" rel="stylesheet">
+	<script src="../js/util.js"></script>
+	<script src="../js/evento.js"></script>
+	<script src="../js/interacao.js"></script>
+	<script src="../js/controle.js"></script>
+	<script>
+		function init(event) {
+			var conteudo = new Conteudo(document.body, false);
+			conteudo.addEventListener(EventoInteracao.FINALIZA, fimTela);
+			conteudo.dispatchEvent({type:EventoInteracao.INICIA});
+		}
+
+		function fimTela(event) {
+			event.target.removeEventListener(event.type, arguments.callee);
+
+			console.log("Fim Tela");
+
+			window.top.fimTela();
+		}
+	</script>
+	
+</head>
+<body onload="init(event)" style="background-color: #a0a1a3;">
+	<div data-nome="cima1" class="tituloQuestao">
+		Questão 09
+	</div>
+	<div data-nome="alpha2" class="enunciado">
+		<div>Assinale abaixo a especificação correta para o código de credencial RA:</div>
+	</div>
+	<div data-nome="alpha3" style="" data-acao="atividadeMarcar" data-gabarito="1">
+		<div class="opcao">
+			<div class="marcador">A</div>
+			<div class="texto">Todas as áreas restritas de segurança do aeroporto, incluindo alfândega (TPS e TECA) – entrada por todos os canais.</div>
+		</div>
+
+		<div class="opcao">
+			<div class="marcador">B</div>
+			<div class="texto">Áreas restritas, sem acesso às áreas das alfândegas – acesso por todos os canais.</div>
+		</div>
+
+		<div class="opcao">
+			<div class="marcador">C</div>
+			<div class="texto">Restrito ao embarque e desembarque (TPS 1 e 2) – acesso somente pelos canais dos TPS 1 e 2.</div>
+		</div>
+	</div>
+</body>
+</html>

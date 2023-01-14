@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Tela</title>
+	<link href="../css/interacao.css" rel="stylesheet">
+	<link href="../css/tela.css" rel="stylesheet">
+	<script src="../js/util.js"></script>
+	<script src="../js/evento.js"></script>
+	<script src="../js/interacao.js"></script>
+	<script src="../js/controle.js"></script>
+	<script>
+		function init(event) {
+			var conteudo = new Conteudo(document.body, false);
+			conteudo.addEventListener(EventoInteracao.FINALIZA, fimTela);
+			conteudo.dispatchEvent({type:EventoInteracao.INICIA});
+		}
+
+		function fimTela(event) {
+			event.target.removeEventListener(event.type, arguments.callee);
+
+			console.log("Fim Tela");
+
+			window.top.fimTela();
+		}
+	</script>
+	
+</head>
+<body onload="init(event)" style="background-color: #a0a1a3;">
+	<div data-nome="cima1" class="tituloQuestao">
+		Questão 01
+	</div>
+	<div data-nome="alpha2" class="enunciado">
+		<div>Analise as afirmativas abaixo e assinale qual delas apresenta a definição adequada para AVSEC.</div>
+	</div>
+	<div data-nome="alpha3" data-acao="atividadeMarcar" data-gabarito="3">
+		<div class="opcao">
+			<div class="marcador">A</div>
+			<div class="texto">AVSEC representa uma combinação de medidas e recursos materiais destinados a proteger a aviação civil contra atos de interferência lícita.</div>
+		</div>
+
+		<div class="opcao">
+			<div class="marcador">B</div>
+			<div class="texto">AVSEC representa um tipo de medida e recursos sociais destinados a proteger a aviação civil contra atos de interferência ilícita.</div>
+		</div>
+
+		<div class="opcao">
+			<div class="marcador">C</div>
+			<div class="texto">AVSEC representa uma combinação de medidas, recursos humanos e materiais destinados a proteger a aviação civil contra atos de interferência ilícita.</div>
+		</div>
+	</div>
+</body>
+</html>

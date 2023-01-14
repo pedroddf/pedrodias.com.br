@@ -1,0 +1,104 @@
+@font-face {
+	font-family:"Minion Pro";
+	font-style:normal;
+	font-weight:normal;
+	src :  url("../font/MinionPro-Regular.woff"), url("../font/MinionPro-Regular.svg");
+}
+@font-face {
+	font-family:"Odebrecht Sans";
+	font-style:normal;
+	font-weight:normal;
+	src : url('../font/Odebrecht-Sans.woff') format('woff');
+}
+@font-face {
+	font-family:"Odebrecht Sans Bold";
+	font-style:normal;
+	font-weight:600;
+	src :url('../font/odebrecht-sans_bold.woff') format('woff');
+}
+@font-face {
+	font-family:"Odebrecht Sans";
+	font-style:italic;
+	font-weight:normal;
+	src :  url("../font/Odebrecht-SansItalic.woff"), url("../font/Odebrecht-SansItalic.svg");
+}
+@font-face {
+	font-family:"Odebrecht Sans";
+	font-style:oblique;
+	font-weight:normal;
+	src :  url("../font/Odebrecht-SansItalic.woff"), url("../font/Odebrecht-SansItalic.svg");
+}
+@font-face {
+	font-family:"Open Sans";
+	font-style:normal;
+	font-weight:bold;
+	src :  url("../font/OpenSans-Bold.woff"), url("../font/OpenSans-Bold.svg");
+}
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+	margin:0;
+	padding:0;
+	border-width:0;
+	text-rendering:optimizeSpeed;
+}
+div._idGenButton div._idGen-Appearance-Normal {
+	visibility:visible;
+}
+div._idGenButton div._idGen-Appearance-Rollover {
+	visibility:hidden;
+}
+div._idGenButton div._idGen-Appearance-Click {
+	visibility:hidden;
+}
+div._idGenButton {
+	cursor:pointer;
+}
+div._idGenButton._idGenStateHover div._idGen-Appearance-Normal {
+	visibility:hidden;
+}
+div._idGenButton._idGenStateHover div._idGen-Appearance-Rollover {
+	visibility:visible;
+}
+div._idGenButton._idGenStateHover div._idGen-Appearance-Click {
+	visibility:hidden;
+}
+div._idGenButton._idGenStateClick div._idGen-Appearance-Normal {
+	visibility:hidden;
+}
+div._idGenButton._idGenStateClick div._idGen-Appearance-Rollover {
+	visibility:hidden;
+}
+div._idGenButton._idGenStateClick div._idGen-Appearance-Click {
+	visibility:visible;
+}
+div._idGenStateHide div._idGen-Appearance-Normal {
+	visibility:hidden;
+}
+div._idGenStateHide div._idGen-Appearance-Rollover {
+	visibility:hidden;
+}
+div._idGenStateHide div._idGen-Appearance-Click {
+	visibility:hidden;
+}
+div._idGenMSO {
+	visibility:hidden;
+}
+div._idGenMSO div._idGenCurrentState {
+	visibility:visible;
+}
+div._idGenMSO._idGenStateHide div._idGenCurrentState {
+	visibility:hidden;
+}
+div._idGenStateHide div._idGenMSO div._idGenCurrentState {
+	visibility:hidden;
+}
+div._idGenStateHide, div._idGenStateHide *{
+	visibility:hidden;
+}
+div.Basic-Graphics-Frame {
+	border-color:#000000;
+	border-width:1px;
+	border-style:solid;
+}
+div.Basic-Text-Frame {
+	border-style:solid;
+}

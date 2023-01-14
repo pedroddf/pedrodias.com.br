@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Tela</title>
+	<link href="../css/interacao.css" rel="stylesheet">
+	<link href="../css/tela.css" rel="stylesheet">
+	<script src="../js/util.js"></script>
+	<script src="../js/evento.js"></script>
+	<script src="../js/interacao.js"></script>
+	<script src="../js/controle.js"></script>
+	<script>
+		function init(event) {
+			var conteudo = new Conteudo(document.body, false);
+			conteudo.addEventListener(EventoInteracao.FINALIZA, fimTela);
+			conteudo.dispatchEvent({type:EventoInteracao.INICIA});
+		}
+
+		function fimTela(event) {
+			event.target.removeEventListener(event.type, arguments.callee);
+
+			console.log("Fim Tela");
+
+			window.top.fimTela();
+		}
+	</script>
+	
+</head>
+<body onload="init(event)" style="background-color: #a0a1a3;">
+	<div data-nome="cima1" class="tituloQuestao">
+		Questão 06
+	</div>
+	<div data-nome="alpha2" class="enunciado">
+		<div>O CMES é um dos meios de segurança adotados pelos setores aeroportuários e, possui a seguinte definição:</div>
+	</div>
+	<div data-nome="alpha3" style="" data-acao="atividadeMarcar" data-gabarito="2">
+		<div class="opcao">
+			<div class="marcador">A</div>
+			<div class="texto">Responsável por filtrar qualquer área de acesso às aeronaves e entornos fazendo com que a aeronave saia em segurança. Possuem equipamentos eletrônicos, raio X e agentes de proteção de aviação civil (APAC).</div>
+		</div>
+
+		<div class="opcao">
+			<div class="marcador">B</div>
+			<div class="texto">O Centro monitora, 24 h por dia, cada parte do aeroporto. São mais de 300 câmeras observando e buscando qualquer falha ou atitude suspeita.</div>
+		</div>
+
+		<div class="opcao">
+			<div class="marcador">C</div>
+			<div class="texto">Qualquer empresa que opere dentro de uma área restrita (por meio de profissionais variados – <em>sushiman</em>, por exemplo) deve ter um plano de segurança inspecionado e auditado pela companhia aérea.</div>
+		</div>
+	</div>
+</body>
+</html>

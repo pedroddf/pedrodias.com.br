@@ -1,0 +1,773 @@
+@font-face {
+	font-family:"Minion Pro";
+	font-style:normal;
+	font-weight:normal;
+	src :  url("../fonte/MinionPro-Regular.woff"), url("../fonte/MinionPro-Regular.svg");
+}
+@font-face {
+	font-family:"Odebrecht Sans";
+	font-style:normal;
+	font-weight:normal;
+	src : url('../fonte/Odebrecht-Sans.woff') format('woff');
+}
+@font-face {
+	font-family:"Odebrecht Sans Bold";
+	font-style:normal;
+	font-weight:600;
+	src :url('../fonte/odebrecht-sans_bold.woff') format('woff');
+}
+@font-face {
+	font-family:"Odebrecht Sans";
+	font-style:italic;
+	font-weight:normal;
+	src :  url("../fonte/Odebrecht-SansItalic.woff"), url("../fonte/Odebrecht-SansItalic.svg");
+}
+@font-face {
+	font-family:"Odebrecht Sans";
+	font-style:oblique;
+	font-weight:normal;
+	src :  url("../fonte/Odebrecht-SansItalic.woff"), url("../fonte/Odebrecht-SansItalic.svg");
+}
+@font-face {
+	font-family:"Open Sans";
+	font-style:normal;
+	font-weight:bold;
+	src :  url("../fonte/OpenSans-Bold.woff"), url("../fonte/OpenSans-Bold.svg");
+}
+
+
+/* [webAula] Estilos aplicados ao fundo/index */
+
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+
+body {
+	background: #fff;
+	color: #333;
+	font-family:"Odebrecht Sans";
+	font-size: 18px;
+	background-image:url(../img/bg_site.png);
+}
+
+button {
+	font-family:"Odebrecht Sans";
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Resolução nativa do curso */
+
+#wa-fundo > header *,
+#wa-fundo > footer *,
+#wa-asset {
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#wa-abertura, #wa-fundo {
+	background: #f7f7f7 url(../img/background.png);
+	height: 600px;
+	overflow: hidden;
+	position: absolute;
+	width: 1024px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#wa-abertura {
+	padding-top: 10%;
+	text-align: center;
+}
+
+#wa-fundo > header {
+	background-color: #6d6e71;
+	border-bottom: 7px solid #c8c8c8;
+	color: #fff;
+	height: 34px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#wa-fundo > section {
+	overflow: hidden;
+}
+
+#preloader-tela {
+	background: url(../img/preloader.gif) no-repeat;
+	height: 64px;
+	left: 50%;
+	margin-left: -32px;
+	margin-top: -32px;
+	position: absolute;
+	top: 50%;
+	width: 64px;
+}
+
+#frame-tela {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#wa-assets {
+	overflow: hidden;
+	width: 1024px;
+	height: 600px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#asset-menu{
+	background-color: #b7d371;
+	width: 1024px;
+	height: 560px;
+	position: absolute;
+	bottom: 0;
+	z-index: 9;
+}
+
+#asset-menu section{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+#asset-menu .dados{
+	background-color: #b7d371;
+	width: 100%;
+	height: 100px;
+}
+
+#asset-menu .dados > div{
+	float: left;
+	display: inline-block;
+	width: 25%;
+	height: 80px;
+	margin-top: 10px;
+	color: #FFF;
+	font-size: 18px;
+}
+
+#asset-menu .dados > div:last-child{
+	width: 35%;
+}
+
+#asset-menu .dados > div .fundo-porcentagem{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#asset-menu .mapa-telas{
+	background-color: #9a9b9d;
+	font-size: 22px;
+	overflow: hidden;
+	color: #6d6e71;
+	font-weight: bold;
+	padding: 10px 0 0;
+}
+
+#asset-menu .mapa-telas div{
+	margin: auto;
+	width: 70%;
+}
+
+
+#asset-menu .conteudo-telas{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	border:1px solid #000;
+}
+
+#asset-menu .lista-telas{
+	background-color: #9a9b9d;
+	width: 100%;
+	height: 310px;
+	overflow: auto;
+	
+}
+
+#asset-menu .lista-status{
+	background-color: #737477;
+	height: 70px;
+}
+
+
+#asset-menu .lista-status > div{
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	width: 30%;
+	color: #E0EBC3;
+	margin-top: 10px;
+}
+
+#asset-menu .lista-status > div > div{
+	display: block;
+	vertical-align: middle;
+	color: #FFF;
+}
+
+.legendaAtual:after{
+	font-size:18px;
+	content:"";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border:2px solid #99C33E;
+	border-radius: 100%;
+	background-image: radial-gradient(#99C33E 3px, transparent 3px);
+	background-image: -webkit-radial-gradient(#99C33E 3px, transparent 3px);
+	background-image: -ms-radial-gradient(#99C33E 3px, transparent 3px);
+	background-image: -o-radial-gradient(#99C33E 3px, transparent 3px);
+	background-image: -moz-radial-gradient(#99C33E 3px, transparent 3px);
+}
+
+.legendaPendente:after{
+	font-size:18px;
+	content:"";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border:2px solid #99C33E;
+	border-radius: 100%;
+}
+
+.legendaCompleto:after{
+	font-size:18px;
+	content:"";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border:2px solid #99C33E;
+	border-radius: 100%;
+	background-color: #99C33E;
+}
+
+
+#asset-menu .lista-topicos{
+	left: 50%;
+}
+
+#asset-menu .lista-topicos div{
+	height: 140px;
+	text-align: center;
+	font-size: 100px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#asset-menu .lista-topicos div span{
+	pointer-events:none;
+}
+
+#asset-menu .lista-topicos div:nth-child(n) {
+    background-color: #009a90;
+    color:#4ab0a6;
+}
+
+#asset-menu .lista-topicos div:nth-child(2n) {
+    background-color: #832a85;
+    color:#e60071;
+}
+
+#asset-menu .lista-topicos div:nth-child(3n) {
+    background-color: #e52329;
+    color:#f08222;
+}
+
+#asset-menu .lista-topicos div:nth-child(4n) {
+    background-color: #f08223;
+    color:#f8b72a;
+}
+
+.menu-capitulo{
+	font-size: 62px;
+	height: 130px;
+	display: inline-block;
+}
+
+.capitulo-numero{
+	height: 130px;
+	display: inline-block;
+	font-size: 100px;
+	line-height: 20px;
+}
+
+#asset-menu [data-nome*='item'] {
+	color: #FFF;
+	cursor: pointer;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 5px auto;
+	width: 70%;
+	font-size: 18px;
+
+
+}
+
+#asset-menu [data-nome*='item']:hover {
+	/*background-color: #eee;*/
+}
+
+#asset-menu [data-nome*='item'].atual{
+	background-color: #6d6e71;
+}
+
+#asset-menu [data-nome*='item'].atual:after{
+	float: right;
+	color: #99C33E;
+	content:"";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border:2px solid #99C33E;
+	border-radius: 100%;
+	background-image: radial-gradient(#99C33E 3px, transparent 3px);
+	background-image: -webkit-radial-gradient(#99C33E 3px, transparent 3px);
+	background-image: -ms-radial-gradient(#99C33E 3px, transparent 3px);
+	background-image: -o-radial-gradient(#99C33E 3px, transparent 3px);
+	background-image: -moz-radial-gradient(#99C33E 3px, transparent 3px);
+
+}
+
+#asset-menu [data-nome*='item'].pendente:after{
+	float: right;
+	margin-top: -5px;
+	color: #99C33E;
+	content:"";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border:2px solid #99C33E;
+	border-radius: 100%;
+}
+
+#asset-menu [data-nome*='item'].completo:after{
+	float: right;
+	margin-top: -5px;
+	color: #99C33E;
+	content:"";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border:2px solid #99C33E;
+	border-radius: 100%;
+	background-color: #99C33E;
+}
+
+.abertura-iniciar {
+	background-color: #999;
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 15px;
+	margin-top: 10%;
+	padding: 10px;
+	transition: background-color 0.3s linear;
+}
+
+.abertura-iniciar:hover {
+	background-color: #f79646;
+}
+
+.fundo-limites {
+	height: 100%;
+	margin: auto;
+	max-width: 758px;
+	padding: 0 5px;
+}
+
+.fundo-titulo,
+.fundo-assets {
+	display: table-cell;
+	height: 90px;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.fundo-logo{
+	position: absolute;
+	left: 50%;
+	top:-14px;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+}
+
+.fundo-titulo {
+	cursor: default;
+	padding: 0 1.5%;
+	width: 56%;
+}
+
+.fundo-assets > * {
+	background: #fff;
+	color: #007546;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.fundo-telas {
+	border-radius: 5px;
+	cursor: default;
+	text-align: center;
+	width: 70px;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	background-color: transparent;
+	color:#FFF;
+}
+
+.tela-atual{
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.tela-total{
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	font-size: 14px;
+}
+
+.fundo-menu {
+	border: none;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 2px;
+	left: 40px;
+	background-color: transparent;
+	/*background-image: linear-gradient(to bottom, #FFF 10px, transparent 10px), linear-gradient(to bottom, #FFF 10px, transparent 10px), linear-gradient(to bottom, #FFF 10px, transparent 10px);
+	background-image: -webkit-linear-gradient(to bottom, #FFF 10px, transparent 10px), -webkit-linear-gradient(to bottom, #FFF 10px, transparent 10px), -webkit-linear-gradient(to bottom, #FFF 10px, transparent 10px);
+	background-image: -moz-linear-gradient(to bottom, #FFF 10px, transparent 10px), -moz-linear-gradient(to bottom, #FFF 10px, transparent 10px), -moz-linear-gradient(to bottom, #FFF 10px, transparent 10px);
+	background-image: -o-linear-gradient(to bottom, #FFF 10px, transparent 10px), -o-linear-gradient(to bottom, #FFF 10px, transparent 10px), -o-linear-gradient(to bottom, #FFF 10px, transparent 10px);
+	background-image: -ms-linear-gradient(to bottom, #FFF 10px, transparent 10px), -ms-linear-gradient(to bottom, #FFF 10px, transparent 10px), -ms-linear-gradient(to bottom, #FFF 10px, transparent 10px);
+	background-size: 30px 2px;
+	background-position: center 5px, center 13px, center 20px;*/
+	background-image: url(../img/menu.png);
+	background-position: center center; 
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	outline: 0;
+}
+
+.fundo-menu:hover {
+	/*background-image: linear-gradient(to bottom, #FFF 10px, transparent 10px), linear-gradient(to bottom, #FFF 10px, transparent 10px), linear-gradient(to bottom, #FFF 10px, transparent 10px);
+	background-image: -webkit-linear-gradient(to bottom, #FFF 10px, transparent 10px), -webkit-linear-gradient(to bottom, #FFF 10px, transparent 10px), -webkit-linear-gradient(to bottom, #FFF 10px, transparent 10px);
+	background-image: -moz-linear-gradient(to bottom, #FFF 10px, transparent 10px), -moz-linear-gradient(to bottom, #FFF 10px, transparent 10px), -moz-linear-gradient(to bottom, #FFF 10px, transparent 10px);
+	background-image: -o-linear-gradient(to bottom, #FFF 10px, transparent 10px), -o-linear-gradient(to bottom, #FFF 10px, transparent 10px), -o-linear-gradient(to bottom, #FFF 10px, transparent 10px);
+	background-image: -ms-linear-gradient(to bottom, #FFF 10px, transparent 10px), -ms-linear-gradient(to bottom, #FFF 10px, transparent 10px), -ms-linear-gradient(to bottom, #FFF 10px, transparent 10px);
+	background-size: 30px 2px;
+	background-position: center 3px, center 13px, center 23px;*/
+	background-image: url(../img/menu.png);
+	background-position: center center; 
+	background-repeat: no-repeat;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.fundo-ajuda {
+	border: none;
+	border-radius: 100%;
+	cursor: pointer;
+	line-height: 34px;
+	outline: none;
+	padding: 0;
+	text-align: center;
+	width: 34px;
+}
+
+.fundo-subtitulo {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+#botoes-navegacao{
+	overflow: hidden;
+	width: 1024px;
+	height: 600px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.fundo-avancar{
+	background-image: url(../img/avancar.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 40px;
+	height: 204px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: 0;
+	-webkit-transition: background-position 0.5s linear;
+	-o-transition: background-position 0.5s linear;
+	transition: background-position 0.5s linear;
+	outline: 0;
+}
+
+.fundo-avancar.exercicio{
+	top:initial;
+	bottom: 0px;
+	right: 0;
+	width: 512px;
+	height: 57px;
+	background-color: #6D6E71;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+	text-align: center;
+	font-size: 22px;
+	color:#FFF;
+	-webkit-transition: all 0s linear;
+	-o-transition: all 0s linear;
+	transition: all 0s linear;
+	border-bottom: 7px solid #C7DE42;
+	border-left: 3px solid #C8C8C8;
+	font-weight: bold;
+
+	background-image: url(../img/setaD.png) !important;
+	background-position: 310px center;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+}
+
+.fundo-avancar:hover.exercicio{
+	background-image: url(../img/setaD.png) !important;
+	background-position: 320px center;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+}
+
+.fundo-avancar.exercicio:after{
+	content: "Próximo";
+	display: inline;
+}
+
+.fundo-voltar {
+	background-image: url(../img/voltar.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 40px;
+	height: 204px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: 0;
+	-webkit-transition: background-position 0.5s linear;
+	-o-transition: background-position 0.5s linear;
+	transition: background-position 0.5s linear;
+	outline: 0;
+}
+
+.fundo-voltar.exercicio{
+	top:initial;
+	bottom: 0px;
+	left: 0;
+	width: 512px;
+	height: 57px;
+	background-color: #6D6E71;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+	text-align: center;
+	font-size: 22px;
+	color:#FFF;
+	-webkit-transition: all 0s linear;
+	-o-transition: all 0s linear;
+	transition: all 0s linear;
+	border-bottom: 7px solid #C7DE42;
+	font-weight: bold;
+
+	background-image: url(../img/setaE.png) !important;
+	background-position: 200px center;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+}
+
+.fundo-voltar:hover.exercicio{
+	background-image: url(../img/setaE.png) !important;
+	background-position: 190px center;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+}
+
+.fundo-voltar.exercicio:after{
+	content: "Voltar";
+	display: inline;
+}
+
+.fundo-avancar {
+	
+}
+
+.ativaAvancar,
+.ativaVoltar {
+	cursor: pointer;
+}
+
+.ativaAvancar:hover{
+	-webkit-transition: background-position 0.5s linear;
+	-o-transition: background-position 0.5s linear;
+	transition: background-position 0.5s linear;
+	background-position: 5px;
+}
+
+.ativaVoltar:hover {
+	-webkit-transition: background-position 0.5s linear;
+	-o-transition: background-position 0.5s linear;
+	transition: background-position 0.5s linear;
+	background-position: -5px;
+}
+
+.destaqueAvancar {
+	/* Classe adicionada ao fundo-avancar no fimTela */
+}
+
+.asset-box {
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	margin: 3% auto;
+	max-width: 560px;
+}
+
+.asset-box > header {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 15px;
+}
+
+.asset-box > section {
+	padding: 15px 15px 35px 15px;
+}
+
+.asset-box > footer {
+	border-top: 1px solid #e5e5e5;
+	padding: 15px;
+	text-align: right;
+}
+
+.asset-fechar {
+	background-color: #a4c84d;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 34px;
+	width: 100%;
+	text-align: left;
+	padding-left: 80px;
+	background-image: url(../img/setaE.png);
+	background-repeat: no-repeat;
+	background-position: 50px center;
+	font-weight: bold;
+}
+
+.asset-fechar:hover {
+	
+}
+
+.ativaItemMenu {
+	color: #FFF !important;
+}
+
+.ajuda-tabela td {
+	padding-bottom: 15px;
+}
+
+.ajuda-tabela td:first-child {
+	min-width: 150px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ajuda-tabela td > *:first-child {
+	cursor: auto;
+	margin: 0 auto;
+}
+
+.asset-telas,
+.asset-ajuda {
+	background-color: #007546;
+	color: #fff !important;
+}
+
+.asset-voltar,
+.asset-avancar {
+	background-color: #007546;
+	bottom: 0;
+	color: #fff;
+	display: inline-block;
+	float: none;
+	font-size: 20px;
+	height: 34px;
+	padding: 0;
+	position: relative;
+	width: 34px;
+}

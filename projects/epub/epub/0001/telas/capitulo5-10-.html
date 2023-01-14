@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Tela</title>
+	<link href="../css/interacao.css" rel="stylesheet">
+	<link href="../css/tela.css" rel="stylesheet">
+	<script src="../js/util.js"></script>
+	<script src="../js/evento.js"></script>
+	<script src="../js/interacao.js"></script>
+	<script src="../js/controle.js"></script>
+	<script>
+		function init(event) {
+			var conteudo = new Conteudo(document.body, false);
+			conteudo.addEventListener(EventoInteracao.FINALIZA, fimTela);
+			conteudo.dispatchEvent({type:EventoInteracao.INICIA});
+		}
+
+		function fimTela(event) {
+			event.target.removeEventListener(event.type, arguments.callee);
+
+			console.log("Fim Tela");
+
+			window.top.fimTela();
+		}
+	</script>
+	<style type="text/css">
+		.areabotoes{
+			position: absolute;
+			top:200px;
+			left:50px;
+		}
+	</style>
+</head>
+<body onload="init(event)" style="background-color: #a0a1a3;">
+	<div data-nome="cima1" class="tituloQuestao">
+		Questão 09
+	</div>
+	<div data-nome="alpha2" class="enunciado">
+		<div>Analise os códigos de credenciais abaixo e arraste cada um deles a sua devida especificação:</div>
+	</div>
+	<div data-nome="alpha3" data-acao="atividadeArrastar" gabarito="0,1,2,3,4,5" style="width: 1024px;height: 600px; top:0; left: 0; position: absolute;">
+		<div class="areabotoes">
+			<div class="estrutura-atividade">
+				<div class="opcao drag">
+					<div class="marcador"><span class="icone"></span></div>
+					<div class="texto">RA</div>
+				</div>
+			</div>
+			<div class="estrutura-atividade">
+				<div class="opcao drag">
+					<div class="marcador"><span class="icone"></span></div>
+					<div class="texto">R1</div>
+				</div>
+			</div>
+			<div class="estrutura-atividade">
+				<div class="opcao drag">
+					<div class="marcador"><span class="icone"></span></div>
+					<div class="texto">R</div>
+				</div>
+			</div>
+			<div class="estrutura-atividade">
+				<div class="opcao drag">
+					<div class="marcador"><span class="icone"></span></div>
+					<div class="texto">R2A</div>
+				</div>
+			</div>
+			<div class="estrutura-atividade">
+				<div class="opcao drag">
+					<div class="marcador"><span class="icone"></span></div>
+					<div class="texto">T3</div>
+				</div>
+			</div>
+			<div class="estrutura-atividade">
+				<div class="opcao drag">
+					<div class="marcador"><span class="icone"></span></div>
+					<div class="texto">T2</div>
+				</div>
+			</div>
+		</div>
+		<div class="areaDrop">
+			<div class="drop">Todas as áreas restritas de segurança do aeroporto, incluindo alfândega (TPS e TECA) – entrada por todos os canais.</div>
+			<div class="drop">Pátio e pista do aeroporto; não pode acessar embarque, desembarque e TECA – entrada apenas pelo B30, canal de inspeção UAC</div>
+			<div class="drop">Áreas restritas, sem acesso às áreas das alfândegas – acesso por todos os canais.</div>
+			<div class="drop">Restrito ao embarque e desembarque (TPS 1 e 2) – acesso somente pelos canais dos TPS 1 e 2.</div>
+			<div class="drop">Armazéns de exportação e importação do TECA – acesso exclusivo por cargas.</div>
+			<div class="drop">Plataforma de entrega e recebimento de carga – TECA</div>
+		</div>
+	</div>
+</body>
+</html>
