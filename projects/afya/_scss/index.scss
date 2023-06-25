@@ -220,17 +220,17 @@ header {
         }
     }
 
-    // &:after {
-    //     content: '';
-    //     background: transparent linear-gradient(270deg, transparent 50%, black 100%) 0% 0% no-repeat;
-    //     @extend .u-pos-abs;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     z-index: 2;
+    &:after {
+        content: '';
+        background: transparent linear-gradient(270deg, transparent 50%, black 100%) 0% 0% no-repeat;
+        @extend .u-pos-abs;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
 
-    // }
+    }
 
     .wrap {
         position: relative;
