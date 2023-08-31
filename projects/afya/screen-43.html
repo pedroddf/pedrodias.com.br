@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Afya</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/bootstrap-4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-4.0.0/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel2-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel2-2.3.4/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+    
+    <!-- scripts -->
+    <script src="lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>  
+    <script src="lib/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrap-4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/owlcarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script src="scripts/apiwrapper.js"></script>
+<script src="scripts/scofunctions.js"></script>
+<script src="scripts/interactions.js"></script>
+<style>
+    @media screen and (max-width: 767px) {
+        .img-original {
+            margin-bottom: 20px;
+        }
+    }
+    .img-original {
+        width: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .box-desktop-mb {
+            height: 100%;
+            margin-bottom: 0;
+        }
+    }
+    
+    .box-button {
+        border-radius: 4px;
+        padding: 20px 90px 20px 20px;
+        background: #D31C5B url(assets/imgs/ico_click.svg) no-repeat right 3.5% center;
+        background-size: 35px 39px;
+    }
+
+    .box-button a {
+        color: #fff;
+        font-family: 'Roboto';
+        font-weight: 400;
+        text-decoration: underline;
+    }
+
+    .bt-link {
+        padding: 10px 70px 10px 30px;
+        display: inline-block;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        background: #D31C5B url('assets/imgs/ico_click.svg') no-repeat 120px center;
+        text-decoration: underline;
+        border-radius: 50px;
+    }
+    
+    .bt-link:hover {
+        color: #fff;
+    }
+
+    @media screen and (min-width: 768px) {
+        .box-margin-bottom {
+            margin-bottom: 0;
+            height: 100%;
+        }
+
+        .margin-30-desktop {
+            margin-bottom: 30px;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-2 col-6 no-gutters">
+                        <img src="assets/imgs/logo.svg" alt="Logo Afya Educacional">
+                    </div>
+                    <div class="col-md-8 d-none d-lg-block u-txt-ctr">
+                        <p>Segurança da Informação</p>
+                    </div>
+                    <div class="col-md-2 col-6 u-txt-rgt">
+                        <p><span class="counter">43</span>/46</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="screen">
+        <div class="container-fluid">
+            <img src="assets/imgs/screen_43a.png" alt="">
+        </div>
+        <div class="wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Recapitulando</h1>
+                        <p>Durante o curso aprendemos sobre a importância de proteger as informações estratégicas da AFYA e as pessoais. Vamos relembrar alguns pontos importantes que devem ser fixados?</p>
+
+                        <br>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_43b.svg" alt="" style="max-width: 80px;">
+                            <p><strong>Não</strong> compartilhe informações sensíveis da empresa com desconhecidos, amigos ou familiares.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_43c.svg" alt="" style="max-width: 80px;">
+                            <p>Tenha muita <strong>cautela</strong> ao fornecer suas informações pessoais ou sobre a empresa por telefone, e-mail ou em redes sociais.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_43d.svg" alt="" style="max-width: 80px;">
+                            <p><strong>Desconfie</strong> de qualquer mensagem oferecendo vantagens ou direcionando a tomar ações rápidas e por impulso. Ex.: “Você ganhará tal coisa se clicar aqui...” ; “Você terá sua conta bloqueada se não entrar aqui...”, dentre outras.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_43e.svg" alt="" style="max-width: 80px;">
+                            <p><strong>Nunca</strong> empreste suas senhas de acesso a outras pessoas. Elas são <strong>pessoais</strong> e <strong>intransferíveis</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_43f.svg" alt="" style="max-width: 80px;">
+                            <p>Ao navegar na internet verifique se o site é seguro e se possui um <strong>cadeado</strong> antes do <strong>https</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_43g.svg" alt="" style="max-width: 150px;">
+                            <p>Crie senhas fortes usando letras <strong>minúsculas</strong>, <strong>maiúsculas</strong> e  e outros caracteres especiais: <strong>@</strong> - <strong>$</strong> ou <strong>&</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_43h.svg" alt="" style="max-width: 80px;">
+                            <p>Adote sempre uma postura <strong>preventiva</strong> e torne a atenção com a segurança um hábito incorporado à sua rotina, tanto no ambiente virtual quanto físico.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_43i.svg" alt="" style="max-width: 80px;">
+                            <p>Respeite as <strong>Políticas de Segurança da Informação</strong> da empresa. Caso tenha alguma dúvida sobre como proceder, procure a área de <strong>TI</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_43j.svg" alt="" style="max-width: 80px;">
+                            <p><strong>Não</strong> clique em <em>links</em> ou baixe arquivos de fontes duvidosas.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_43k.svg" alt="" style="max-width: 80px;">
+                            <p>Não abra qualquer anexo de um e-mail que não seja de origem conhecida e que você esteja esperando receber.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="box box-padding-double" style="text-align: center;">
+                            <img src="assets/imgs/screen_43l.svg" alt="" style="max-width: 80px;">
+                            <p><strong>Não</strong> instale <em>softwares</em> no computador da empresa sem a anuência da área de TI.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <p>Para ampliar ainda mais os seus conhecimentos a respeito do assunto,  acesse a cartilha de <strong>Segurança para a Internet</strong> desenvolvida pelo Centro de Estudos e Tratamento de Incidentes de Segurança no Brasil (cert.br).</p>
+
+                        <p><a href="https://cartilha.cert.br/" target="_blank" class="bt-link">Clique aqui</a></p>
+
+                        <h2>Lembre-se sempre: caso tenha alguma dúvida ou identifique algum risco, comunique sempre a área de Tecnologia da Informação!</h2>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  </body>
+</html>

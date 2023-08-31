@@ -696,6 +696,8 @@ header {
     right: 0;
     bottom: 0;
     z-index: 2; }
+  .cover.no-shadow:after {
+    background: transparent !important; }
   .cover .wrap {
     position: relative;
     z-index: 5; }
@@ -1251,7 +1253,7 @@ header {
   background-image: url("../assets/imgs/screen_1.png");
   background-position: top center; }
 
-#screen-3, #screen-15, #screen-28, #screen-35 {
+#screen-3, #screen-6, #screen-30, #screen-44 {
   background-image: url("../assets/imgs/screen_video.png");
   background-position: top center; }
 
@@ -1259,28 +1261,16 @@ header {
   background-image: url("../assets/imgs/screen_4.png");
   background-position: top center; }
 
+#screen-5 {
+  background-image: url("../assets/imgs/screen_5.png");
+  background-position: top center; }
+
 #screen-7 {
-  background-image: url("../assets/imgs/screen_7.png");
+  background-image: url("../assets/imgs/screen_7a.png");
   background-position: top center; }
 
-#screen-9 {
-  background-image: url("../assets/imgs/screen_9.png");
-  background-position: top center; }
-
-#screen-11 {
-  background-image: url("../assets/imgs/screen_11.png");
-  background-position: top center; }
-
-#screen-13 {
-  background-image: url("../assets/imgs/screen_13.png");
-  background-position: top center; }
-
-#screen-16 {
-  background-image: url("../assets/imgs/screen_16.png");
-  background-position: top center; }
-
-#screen-22 {
-  background-image: url("../assets/imgs/screen_22.png");
+#screen-14 {
+  background-image: url("../assets/imgs/screen_14.png");
   background-position: top center; }
 
 #screen-24 {
@@ -1291,20 +1281,32 @@ header {
   background-image: url("../assets/imgs/screen_26.png");
   background-position: top center; }
 
+#screen-27 {
+  background-image: url("../assets/imgs/screen_27.png");
+  background-position: top center; }
+
+#screen-28 {
+  background-image: url("../assets/imgs/screen_28.png");
+  background-position: top center; }
+
 #screen-29 {
-  background-image: url("../assets/imgs/screen_29.png");
+  background-image: url("../assets/imgs/screen_29a.png");
   background-position: top center; }
 
-#screen-31 {
-  background-image: url("../assets/imgs/screen_31.png");
+#screen-32 {
+  background-image: url("../assets/imgs/screen_32a.png");
   background-position: top center; }
 
-#screen-33 {
-  background-image: url("../assets/imgs/screen_33.png");
+#screen-34 {
+  background-image: url("../assets/imgs/screen_34.png");
   background-position: top center; }
 
-#screen-36 {
-  background-image: url("../assets/imgs/screen_36.png");
+#screen-45 {
+  background-image: url("../assets/imgs/screen_45.png");
+  background-position: top center; }
+
+#screen-46 {
+  background-image: url("../assets/imgs/screen_46.png");
   background-position: top center; }
 
 /*# sourceMappingURL=index.min.css.map */

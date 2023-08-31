@@ -22,20 +22,21 @@
 <script src="scripts/scofunctions.js"></script>
 <script src="scripts/interactions.js"></script>
 <style>
-    .bt-link {
-        padding: 10px 70px 10px 30px;
-        display: inline-block;
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 14px;
-        color: #fff;
-        background: #D31C5B url('assets/imgs/ico_click.svg') no-repeat 175px center;
-        text-decoration: underline;
-        border-radius: 50px;
+    @media screen and (min-width: 768px) {
+        h1 {
+            font-size: 6rem;
+        }
+
+        .modulo {
+            font-size: 3rem;
+        }
     }
-    
-    .bt-link:hover {
-        color: #fff;
+
+    @media screen and (max-width: 768px) {
+        .modulo {
+            text-align: center;
+            font-size: 2rem;
+        }
     }
 </style>
 </head>
@@ -48,45 +49,24 @@
                         <img src="assets/imgs/logo.svg" alt="Logo Afya Educacional">
                     </div>
                     <div class="col-md-8 d-none d-lg-block u-txt-ctr">
-                        <p>SESMT - Integração</p>
+                        <p>Segurança da Informação</p>
                     </div>
                     <div class="col-md-2 col-6 u-txt-rgt">
-                        <p><span class="counter">27</span>/36</p>
+                        <p><span class="counter">27</span>/46</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="screen">
-        <div class="container-fluid">
-            <img class="" src="assets/imgs/screen_27a.png" alt="">
-            <div class="screen-header-title">
-                <p>Requisito 9: Atestados Médicos</p>
-            </div>
-        </div>
+    <div class="screen cover d-flex align-items-center" id="screen-27">
         <div class="wrap">
             <div class="container">
-                <div class="row">
-                   <div class="col-12">
-                       <h1>Atestado Médico</h1>
-
-                       <img src="assets/imgs/screen_27b.svg" alt="">
-
-                       <br>
-
-                       <br>
-
-                       <div class="box box-padding-double box-border-left">
-                            <p><strong class="u-color-3">VOCÊ SABE O QUE É CID?</strong><br>CID significa <strong>classificação internacional de doenças</strong>. É um sistema de códigos, criado pela OMS, utilizado no mundo todo para padronizar a linguagem entre os médicos, além de monitorar a incidência e a prevalência de cada doença. Essa informação é de extrema importância, pois é através desse monitoramento que a medicina do trabalho toma ações de prevenção à saúde de seus trabalhadores.</p>
-                       </div>
-
-                       <p>Para saber mais sobre a política de atestados médicos, acesse o <strong>SoftExpert</strong>.</p>
-
-                       <br>
-
-                       <a href="https://afya.softexpert.com/" target="_blank" class="bt-link">afya.softexpert.com</a>
-                   </div>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <h1 class="u-color-1">Papéis e Responsabilidades</h1>
+                        <p style="color: #fff;" class="modulo">Módulo 2</p>
+                    </div>
                 </div>
             </div>
         </div>

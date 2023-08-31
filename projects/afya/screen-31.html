@@ -21,6 +21,48 @@
     <script src="scripts/apiwrapper.js"></script>
 <script src="scripts/scofunctions.js"></script>
 <script src="scripts/interactions.js"></script>
+<style>
+    @media screen and (max-width: 767px) {
+        .img-original {
+            margin-bottom: 20px;
+        }
+    }
+    .img-original {
+        width: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .box-desktop-mb {
+            height: 100%;
+            margin-bottom: 0;
+        }
+    }
+    
+    .box-button {
+        border-radius: 4px;
+        padding: 20px 90px 20px 20px;
+        background: #D31C5B url(assets/imgs/ico_click.svg) no-repeat right 3.5% center;
+        background-size: 35px 39px;
+    }
+
+    .box-button a {
+        color: #fff;
+        font-family: 'Roboto';
+        font-weight: 400;
+        text-decoration: underline;
+    }
+
+    @media screen and (min-width: 768px) {
+        .box-margin-bottom {
+            margin-bottom: 0;
+            height: 100%;
+        }
+
+        .margin-30-desktop {
+            margin-bottom: 30px;
+        }
+    }
+</style>
 </head>
 <body>
     <header>
@@ -31,23 +73,78 @@
                         <img src="assets/imgs/logo.svg" alt="Logo Afya Educacional">
                     </div>
                     <div class="col-md-8 d-none d-lg-block u-txt-ctr">
-                        <p>SESMT - Integração</p>
+                        <p>Segurança da Informação</p>
                     </div>
                     <div class="col-md-2 col-6 u-txt-rgt">
-                        <p><span class="counter">31</span>/36</p>
+                        <p><span class="counter">31</span>/46</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="screen cover d-flex align-items-center" id="screen-31">
+    <div class="screen">
+        <div class="container-fluid">
+            <img src="assets/imgs/screen_31a.png" alt="">
+        </div>
         <div class="wrap">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6">
-                        <h1 class="u-color-1">PAE – Plano de Atendimento a Emergências</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Classificação das Informações</h1>
+                        <p>As informações que transitam hoje na AFYA são classificadas em quatro níveis distintos:</p>
+
+                        <br>
                     </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_31b.svg" alt="" style="max-width: 80px;">
+                            <h2>Pública</h2>
+                            <p>É acessível e pode ser disponibilizada a <strong>qualquer pessoa</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_31c.svg" alt="" style="max-width: 80px;">
+                            <h2>Interna</h2>
+                            <p>Disponível apenas a <strong>colaboradores da empresa</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_31d.svg" alt="" style="max-width: 80px;">
+                            <h2>Confidencial</h2>
+                            <p>Acessível somente para um <strong>grupo de pessoas</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 margin-30-desktop">
+                        <div class="box box-padding-double box-margin-bottom" style="text-align: center;">
+                            <img src="assets/imgs/screen_31e.svg" alt="" style="max-width: 80px;">
+                            <h2>Restrita</h2>
+                            <p>Acessível apenas para <strong>pessoas selecionadas</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <p>Os documentos e informações devem ser classificados para evitar que pessoas <strong>não autorizadas</strong> tenham acesso a determinadas informações e prejudiquem a empresa de alguma forma, seja por vontade própria ou involuntariamente.</p>
+
+                        <br>
+
+                        <div class="box box-padding-double box-border-left">
+                            <p><strong class="u-color-3">FIQUE DE OLHO!</strong><br>A classificação não protege a informação em si, mas auxilia o colaborador no entendimento da sua importância, ou seja, se tal informação é passível de compartilhamento para dentro ou fora da empresa ou se deve ser acessível apenas para determinados colaboradores.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="box-button">
+                            <p><a href="https://g1.globo.com/tecnologia/noticia/hospitais-publicos-na-inglaterra-sao-alvo-cyber-ataques-em-larga-escala.ghtml" target="_blank">Clique aqui e veja uma matéria sobre Ciberataques em larga escala atingem empresas no mundo e afetam o Brasil.</a></p>
+                        </div>
+                    </div>
+            
                 </div>
             </div>
         </div>

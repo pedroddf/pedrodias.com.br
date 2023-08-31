@@ -22,6 +22,16 @@
 <script src="scripts/scofunctions.js"></script>
 <script src="scripts/interactions.js"></script>
 <style>
+    .box {
+        background-color: #D31C5B;
+        text-align: center;
+    }
+
+    .box p {
+        margin-top: 20px;
+        color: #fff
+    }
+
     @media screen and (max-width: 767px) {
         .img-original {
             margin-bottom: 20px;
@@ -29,6 +39,13 @@
     }
     .img-original {
         width: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .box-desktop-mb {
+            height: 100%;
+            margin-bottom: 0;
+        }
     }
 </style>
 </head>
@@ -41,10 +58,10 @@
                         <img src="assets/imgs/logo.svg" alt="Logo Afya Educacional">
                     </div>
                     <div class="col-md-8 d-none d-lg-block u-txt-ctr">
-                        <p>SESMT - Integração</p>
+                        <p>Segurança da Informação</p>
                     </div>
                     <div class="col-md-2 col-6 u-txt-rgt">
-                        <p><span class="counter">18</span>/36</p>
+                        <p><span class="counter">18</span>/46</p>
                     </div>
                 </div>
             </div>
@@ -53,66 +70,53 @@
 
     <div class="screen">
         <div class="container-fluid">
-            <img class="" src="assets/imgs/screen_18a.png" alt="">
-            <div class="screen-header-title">
-                <p>Requisito 6: Prevenção Contra Incêndio</p>
-            </div>
+            <img src="assets/imgs/screen_18a.png" alt="">
         </div>
         <div class="wrap">
             <div class="container">
                 <div class="row">
-                   <div class="col-12">
-                       <h1>Prevenção Contra Incêndio</h1>
+                    <div class="col-12">
+                        <h1>Tipos de Ataque de Engenharia Social</h1>
+                        <p>Conheça os tipos de ataques de engenharia social mais comuns utilizados pelos fraudadores.</p>
 
-                       <h2>Classes de fogo</h2>
-
-                       <br>
-
-                       <div class="box box-padding-double box-border-left">
-                            <div class="row align-items-center justify-content-center">
-                                <div class="col-6 col-md-2 u-txt-ctr">
-                                    <img src="assets/imgs/screen_18b.png" alt="" class="img-original" style="max-width: 82px;">
-                                </div>
-                                <div class="col-12 col-md-10">
-                                    <p><strong class="u-color-3">CLASSE “A”</strong><br>São materiais de fácil combustão, queimam tanto na superfície como em profundidade, deixando resíduos. Ex.: madeira, papel etc.</p>
-                                </div>
-                            </div>
-                       </div>
-
-                       <div class="box box-padding-double box-border-left">
-                            <div class="row align-items-center justify-content-center">
-                                <div class="col-6 col-md-2 u-txt-ctr">
-                                    <img src="assets/imgs/screen_18c.png" alt="" class="img-original" style="max-width: 82px;">
-                                </div>
-                                <div class="col-12 col-md-10">
-                                    <p><strong class="u-color-3">CLASSE “B”</strong><br>São os produtos que queimam somente na superfície. Ex.: gasolina, óleos, graxas etc.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="box box-padding-double box-border-left">
-                            <div class="row align-items-center justify-content-center">
-                                <div class="col-6 col-md-2 u-txt-ctr">
-                                    <img src="assets/imgs/screen_18d.png" alt="" class="img-original" style="max-width: 82px;">
-                                </div>
-                                <div class="col-12 col-md-10">
-                                    <p><strong class="u-color-3">CLASSE “C”</strong><br>Ocorre em equipamentos elétricos energizados. Ex.: motores, quadros de distribuição etc.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="box box-padding-double box-border-left">
-                            <div class="row align-items-center justify-content-center">
-                                <div class="col-6 col-md-2 u-txt-ctr">
-                                    <img src="assets/imgs/screen_18e.png" alt="" class="img-original" style="max-width: 82px;">
-                                </div>
-                                <div class="col-12 col-md-10">
-                                    <p><strong class="u-color-3">CLASSE “D”</strong><br>Ocorre em materiais pirofóricos como magnésio, zircônio, titânio etc.</p>
-                                </div>
-                            </div>
-                        </div>
-                   </div>
+                        <br>
+                    </div>
                 </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4">
+                        <div class="box box-padding-double">
+                            <img src="assets/imgs/screen_18b.svg" alt="" style="max-width: 75px;">
+                            <p><em><strong>Phishing</strong></em></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="box box-padding-double">
+                            <img src="assets/imgs/screen_18c.svg" alt="" style="max-width: 75px;">
+                            <p><strong><em>Baiting</em></strong></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="box box-padding-double">
+                            <img src="assets/imgs/screen_18d.svg" alt="" style="max-width: 75px;">
+                            <p><strong><em>Pretexting</em></strong></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="box box-padding-double">
+                            <img src="assets/imgs/screen_18e.svg" alt="" style="max-width: 75px;">
+                            <p><strong>Presencial</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="box box-padding-double">
+                            <img src="assets/imgs/screen_18f.svg" alt="" style="max-width: 75px;">
+                            <p><strong>Sextorsion</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Veja nas próximas telas a explicação de cada um deles.</p>
             </div>
         </div>
     </div>
