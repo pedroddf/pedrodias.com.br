@@ -73,3 +73,21 @@ body {
     letter-spacing: 0.25em;
     text-transform: uppercase;
 }
+
+#proposta a {
+    color: #fff;
+    transition: all linear .2s;
+}
+
+#proposta a:hover {
+    color: rgba(255, 255, 255, 0.55);
+    transition: all linear .2s;
+}
+
+.projetos {
+    background-color: #1a2a40;
+}
+
+.projetos img {
+    cursor: default;
+}
