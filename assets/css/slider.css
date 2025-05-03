@@ -51,10 +51,11 @@ swiper-slide img {
   padding: 40px;
   max-width: 60vw;
   width: 100%;
-  min-height: 60vh;
+  max-height: 80vh;
   transform: translateY(-100px);
   transition: transform 0.3s ease;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  overflow: auto;
 }
 
 .modal.show .modal-content {
