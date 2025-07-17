@@ -12,10 +12,10 @@
     --iti-triangle-border: calc(var(--iti-arrow-width) / 2);
     --iti-arrow-padding: 6px;
     --iti-arrow-color: #555;
-    --iti-path-flags-1x: url("/wp-content/plugins/sureforms/assets/css/minified/deps/intl/img/flags.webp");
-    --iti-path-flags-2x: url("/wp-content/plugins/sureforms/assets/css/minified/deps/intl/img/flags@2x.webp");
-    --iti-path-globe-1x: url("/wp-content/plugins/sureforms/assets/css/minified/deps/intl/img/globe.webp");
-    --iti-path-globe-2x: url("/wp-content/plugins/sureforms/assets/css/minified/deps/intl/img/globe@2x.webp");
+    --iti-path-flags-1x: url("/https://pedrodias.com.br/drajulianadutra//wp-content/plugins/sureforms/assets/css/minified/deps/intl/img/flags.webp");
+    --iti-path-flags-2x: url("/https://pedrodias.com.br/drajulianadutra//wp-content/plugins/sureforms/assets/css/minified/deps/intl/img/flags@2x.webp");
+    --iti-path-globe-1x: url("/https://pedrodias.com.br/drajulianadutra//wp-content/plugins/sureforms/assets/css/minified/deps/intl/img/globe.webp");
+    --iti-path-globe-2x: url("/https://pedrodias.com.br/drajulianadutra//wp-content/plugins/sureforms/assets/css/minified/deps/intl/img/globe@2x.webp");
     --iti-flag-sprite-width: 3904px;
     --iti-flag-sprite-height: 12px;
     --iti-mobile-popup-margin: 30px;
